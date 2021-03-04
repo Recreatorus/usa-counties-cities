@@ -1,5 +1,5 @@
 # usa-counties-cities
-Information on counties and cities of the united states
+Information on counties and cities of the United States
 
 [USA counties](https://recreatorus.github.io/usa-counties-cities/index.html 'watch demo')
 
