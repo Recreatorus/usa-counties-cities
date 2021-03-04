@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>Cities USA</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="page">
+    <div class="menu">
+      <div class="menu-header">
+        <div class="theme-switcher">
+          <input type="radio" id="light-theme" name="themes" checked />
+          <label for="light-theme" class="noselect">
+            <span class="flex-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+          </label>
+          <input type="radio" id="dark-theme" name="themes" />
+          <label for="dark-theme" class="noselect">
+            <span class="flex-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+          </label>
+          <span class="slider"></span>
+        </div>
+      </div>
+    </div>
+    <h1>United States cities</h1>
+    <details>
+      <summary>Briefly about US cities</summary>
+      <div class="content">
+        <p>As of 2019, there were 3143 counties (3,243 counties and county-equivalents) and about 30,000 cities in the United States. Of
+          which: 4 cities, population
+          of which there are more than 2 million people, 10 are millionaire cities (over 1 million people), 317 large cities with a
+          population of over
+          100,000
+          people, 56 - large cities (from 300 thousand people to 1 million people) and 251 - large cities (from 100 to 300 thousand people).
+          The United States 2020 population is estimated at 331,002,651 people at mid year according to UN data, urban population -
+          273,975,139 (82.8%), Median Age - 38.3.<br>You can also <a class="link" href=""><span>search by county</span></a>
+        </p>
+      </div>
+    </details>
+
+    <div class="input-block">
+      <input id="country-input" class="country-input" type="text" name="input-text" id="input-text" required spellcheck="false">
+      <span class="placeholder">Enter state or city...</span>
+      <div class="search flex-center">
+        <svg viewBox="0 0 24 24" style="fill:none; stroke:currentcolor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1;">
+          <path d="M10.5,0.5c5.523,0,10,4.477,10,10s-4.477,10-10,10s-10-4.477-10-10S4.977,0.5,10.5,0.5z M23.5,23.5 l-5.929-5.929"></path>
+        </svg>
+      </div>
+      <div class="close flex-center">
+        <svg class="icon" viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="1">
+          <line x1="1" y1="1" x2="11" y2="11" />
+          <line x1="11" y1="1" x2="1" y2="11" />
+        </svg>
+      </div>
+    </div>
+    <div class="lengthData"></div>
+    <div id="display" class="display"></div>
+  </div>
+
+  <script src="js/autocomplete.min.js"></script>
+  <script src="js/usa-city.min.js"></script>
+</body>
+
+</html>
