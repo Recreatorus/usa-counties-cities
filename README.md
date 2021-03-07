@@ -12,4 +12,4 @@ State | City | Population | Growth (2000 - 2013)
 
 [USA cities](https://recreatorus.github.io/usa-counties-cities/usa-city.html 'watch demo')
 
-![scan](usa-city.png)
+
